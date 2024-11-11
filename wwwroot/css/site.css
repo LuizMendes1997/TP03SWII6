@@ -1,0 +1,143 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+
+    margin-bottom: 130px;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+
+.hero-section {
+    background-image: url('https://via.placeholder.com/1600x400');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+    }
+
+h1, h2, h3 {
+    font-family: 'Segoe UI', sans-serif;
+    color: #343a40;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none; 
+
+    a:hover {
+        color: #0056b3;
+        text-decoration: underline; 
+    }
+
+footer {
+    background-color: #212529;
+    color: #ffffff;
+}
+
+
+.welcome-container {
+    background-color: #f9f9f9;
+    padding: 30px;
+    max-width: 960px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-title {
+    font-size: 2.5rem;
+    color: #007BFF;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.welcome-subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-top: 20px;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+}
+
+ul {
+    margin-left: 20px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+    ul li {
+        margin-bottom: 10px;
+    }
+
+section {
+    margin-bottom: 30px;
+}
+
+    section h2 {
+        margin-bottom: 10px;
+        font-size: 1.4rem;
+        color: #007BFF;
+    }
+
+    section ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+
+        section ul li {
+            margin-bottom: 10px;
+        }
+
+            section ul li::marker {
+                color: #007BFF;
+            }
+
+h1, h2 {
+    font-weight: 700;
+}
+
+
+.welcome-container section {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .welcome-container section ul {
+        padding-left: 20px;
+    }
+

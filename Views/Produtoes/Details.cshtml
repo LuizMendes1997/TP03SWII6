@@ -1,0 +1,38 @@
+﻿@model SistemaTP03.Models.Produto
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="produto-details-container">
+    <h1 class="produto-title">@Model.Nome</h1>
+
+   
+    <section class="produto-descricao">
+        <h2>Descrição:</h2>
+        <p>@Model.Descricao</p>
+    </section>
+
+  
+    <section class="produto-info">
+        <div class="produto-preco">
+            <h3>Preço:</h3>
+            <p>R$ @Model.Preco.ToString("F2")</p>
+        </div>
+
+        <div class="produto-quantidade">
+            <h3>Quantidade em Estoque:</h3>
+            <p>@Model.QuantidadeEmEstoque</p>
+        </div>
+    </section>
+
+    <div class="produto-actions">
+        <a href="@Url.Action("Edit", new { id = Model.Id })" class="btn btn-warning">Editar</a>
+        <a href="@Url.Action("Delete", new { id = Model.Id })" class="btn btn-danger">Excluir</a>
+        <a href="@Url.Action("Index")" class="btn btn-secondary">Voltar</a>
+    </div>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
